@@ -1,0 +1,12 @@
+______________________________________
+|Command |  Description               |
+|mkdir   | Create directory           |
+|cd      |  Change directory          |
+|touch   |  Create empty file         |
+|nano    |   Edit file                |
+|cat     |   Display file content     |
+|cp      |   Copy file                |
+|mv      |   Move/Rename file         |
+|rm      |   Delete file              |
+|rmdir   |   Remove empty directory   |
+|_____________________________________|
