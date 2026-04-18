@@ -1,22 +1,14 @@
 \documentclass[aspectratio=169]{beamer}
-
-% ------------------ Theme & Colors ------------------
 \usetheme{Madrid}
 \usecolortheme{default}
-
-% ------------------ Packages ------------------
-\usepackage{graphicx}    % For images
-\usepackage{booktabs}    % For tables
-\usepackage{multicol}    % Multiple columns
-\usepackage{hyperref}    % Links
-\usepackage{animate}    % Animations
-\usepackage{tikz}        % Diagrams
-
-% ------------------ Slide Transitions ------------------
+\usepackage{graphicx}    
+\usepackage{booktabs}   
+\usepackage{multicol}    
+\usepackage{hyperref}   
+\usepackage{animate}    
+\usepackage{tikz}       
 \usepackage{pdfpages}
 \setbeamertemplate{navigation symbols}{}
-
-% Add transition effect
 \usepackage{etoolbox}
 \AtBeginSection[]{
 	\begin{frame}[plain]
@@ -25,30 +17,20 @@
 		\Huge \insertsection
 	\end{frame}
 }
-
-% ------------------ Title Information ------------------
 \title{Introduction to LaTeX Beamer}
 \subtitle{Layout, Images, and Transitions}
 \author{Bhagyashree}
 \institute{Department of Computer Science}
 \date{\today}
-
-% ------------------ Document Start ------------------
 \begin{document}
-	
-	% ------------------ Title Slide ------------------
 	\begin{frame}
 		\transfade
 		\titlepage
 	\end{frame}
-	
-	% ------------------ Outline Slide ------------------
 	\begin{frame}{Outline}
 		\transwipe[direction=90]
 		\tableofcontents
 	\end{frame}
-	
-	% ------------------ Section 1 ------------------
 	\section{Introduction}
 	
 	\begin{frame}{What is Beamer?}
@@ -59,10 +41,7 @@
 			\item Widely used in academia and research
 		\end{itemize}
 	\end{frame}
-	
-	% ------------------ Section 2 ------------------
 	\section{Layout Design}
-	
 	\begin{frame}{Two-Column Layout}
 		\transwipe[direction=0]
 		\begin{columns}
@@ -72,17 +51,13 @@
 				\item Easy alignment
 				\item Professional look
 			\end{itemize}
-			
 			\column{0.5\textwidth}
 			\begin{block}{Tip}
 				Use columns to balance text and visuals.
 			\end{block}
 		\end{columns}
 	\end{frame}
-	
-	% ------------------ Section 3 ------------------
 	\section{Image Integration}
-	
 	\begin{frame}{Including Images}
 		\transfade
 		\begin{figure}
@@ -91,10 +66,7 @@
 			\caption{Sample Image in Beamer}
 		\end{figure}
 	\end{frame}
-	
-	% ------------------ Section 4 ------------------
 	\section{Tables and Data}
-	
 	\begin{frame}{Sample Table}
 		\transwipe[direction=180]
 		\begin{table}
@@ -110,11 +82,8 @@
 			\end{tabular}
 			\caption{Beamer Features}
 		\end{table}
-	\end{frame}
-	
-	% ------------------ Section 5 ------------------
+	\end{frame}	
 	\section{Transitions and Effects}
-	
 	\begin{frame}{Slide Transitions}
 		\transfade
 		\begin{itemize}
@@ -123,10 +92,7 @@
 			\item \texttt{\textbackslash transblindshorizontal}
 		\end{itemize}
 	\end{frame}
-	
-	% ------------------ Section 6 ------------------
 	\section{Conclusion}
-	
 	\begin{frame}{Conclusion}
 		\transfade
 		\begin{enumerate}
@@ -135,15 +101,11 @@
 			\item Transitions enhance visual appeal
 		\end{enumerate}
 	\end{frame}
-	
-	% ------------------ Thank You Slide ------------------
 	\begin{frame}[plain]
 		\transfade
 		\centering
 		\Huge Thank You!\\
 		\vspace{0.5cm}
 		\Large Questions?
-	\end{frame}
-	
+	\end{frame}	
 \end{document}
-
