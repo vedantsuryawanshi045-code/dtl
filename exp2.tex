@@ -1,21 +1,9 @@
 \documentclass[aspectratio=169]{beamer}
 \usetheme{Madrid}
-\usecolortheme{default}
-\usepackage{graphicx}    
-\usepackage{booktabs}   
-\usepackage{multicol}    
-\usepackage{hyperref}   
-\usepackage{animate}    
-\usepackage{tikz}       
-\usepackage{pdfpages}
+\usepackage{graphicx,booktabs,etoolbox}
 \setbeamertemplate{navigation symbols}{}
-\usepackage{etoolbox}
 \AtBeginSection[]{
-	\begin{frame}[plain]
-		\transfade
-		\centering
-		\Huge \insertsection
-	\end{frame}
+\begin{frame}[plain]\transfade\centering\Huge\insertsection\end{frame}
 }
 \title{Introduction to LaTeX Beamer}
 \subtitle{Layout, Images, and Transitions}
@@ -23,89 +11,63 @@
 \institute{Department of Computer Science}
 \date{\today}
 \begin{document}
-	\begin{frame}
-		\transfade
-		\titlepage
-	\end{frame}
-	\begin{frame}{Outline}
-		\transwipe[direction=90]
-		\tableofcontents
-	\end{frame}
-	\section{Introduction}
-	
-	\begin{frame}{What is Beamer?}
-		\transfade
-		\begin{itemize}
-			\item Beamer is a LaTeX class for presentations
-			\item Produces professional-quality slides
-			\item Widely used in academia and research
-		\end{itemize}
-	\end{frame}
-	\section{Layout Design}
-	\begin{frame}{Two-Column Layout}
-		\transwipe[direction=0]
-		\begin{columns}
-			\column{0.5\textwidth}
-			\begin{itemize}
-				\item Structured layout
-				\item Easy alignment
-				\item Professional look
-			\end{itemize}
-			\column{0.5\textwidth}
-			\begin{block}{Tip}
-				Use columns to balance text and visuals.
-			\end{block}
-		\end{columns}
-	\end{frame}
-	\section{Image Integration}
-	\begin{frame}{Including Images}
-		\transfade
-		\begin{figure}
-			\centering
-			\includegraphics[width=0.7\textwidth]{example-image}
-			\caption{Sample Image in Beamer}
-		\end{figure}
-	\end{frame}
-	\section{Tables and Data}
-	\begin{frame}{Sample Table}
-		\transwipe[direction=180]
-		\begin{table}
-			\centering
-			\begin{tabular}{lcc}
-				\toprule
-				Feature & Supported & Easy to Use \\
-				\midrule
-				Layout & Yes & Yes \\
-				Images & Yes & Yes \\
-				Transitions & Yes & Moderate \\
-				\bottomrule
-			\end{tabular}
-			\caption{Beamer Features}
-		\end{table}
-	\end{frame}	
-	\section{Transitions and Effects}
-	\begin{frame}{Slide Transitions}
-		\transfade
-		\begin{itemize}
-			\item \texttt{\textbackslash transfade}
-			\item \texttt{\textbackslash transwipe}
-			\item \texttt{\textbackslash transblindshorizontal}
-		\end{itemize}
-	\end{frame}
-	\section{Conclusion}
-	\begin{frame}{Conclusion}
-		\transfade
-		\begin{enumerate}
-			\item Beamer creates professional presentations
-			\item Layouts and images are easy to manage
-			\item Transitions enhance visual appeal
-		\end{enumerate}
-	\end{frame}
-	\begin{frame}[plain]
-		\transfade
-		\centering
-		\Huge Thank You!\\
-		\vspace{0.5cm}
-		\Large Questions?
-	\end{frame}	
+\begin{frame}\transfade\titlepage\end{frame}
+\begin{frame}{Outline}\transwipe[direction=90]\tableofcontents\end{frame}
+\section{Introduction}
+\begin{frame}{What is Beamer?}\transfade
+\begin{itemize}
+\item Beamer is a LaTeX class
+\item Professional slides
+\item Used in academia
+\end{itemize}
+\end{frame}
+\section{Layout Design}
+\begin{frame}{Two-Column Layout}\transwipe[direction=0]
+\begin{columns}
+\column{0.5\textwidth}
+\begin{itemize}
+\item Structured
+\item Easy
+\item Professional
+\end{itemize}
+\column{0.5\textwidth}
+\begin{block}{Tip}Use columns for balance\end{block}
+\end{columns}
+\end{frame}
+\section{Image Integration}
+\begin{frame}{Including Images}\transfade
+\centering\includegraphics[width=0.7\textwidth]{example-image}
+\end{frame}
+\section{Tables}
+\begin{frame}{Sample Table}\transwipe[direction=180]
+\centering
+\begin{tabular}{lcc}
+\toprule
+Feature & Supported & Easy \\
+\midrule
+Layout & Yes & Yes \\
+Images & Yes & Yes \\
+Transitions & Yes & Moderate \\
+\bottomrule
+\end{tabular}
+\end{frame}
+\section{Transitions}
+\begin{frame}{Slide Transitions}\transfade
+\begin{itemize}
+\item \texttt{\textbackslash transfade}
+\item \texttt{\textbackslash transwipe}
+\end{itemize}
+\end{frame}
+\section{Conclusion}
+\begin{frame}{Conclusion}\transfade
+\begin{enumerate}
+\item Professional slides
+\item Easy layout
+\item Good visuals
+\end{enumerate}
+\end{frame}
+\begin{frame}[plain]\transfade\centering
+\Huge Thank You!\\[0.5cm]
+\Large Questions?
+\end{frame}
 \end{document}
