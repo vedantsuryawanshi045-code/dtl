@@ -1,0 +1,38 @@
+Procedure:
+Step 1: Enable Required Windows Features
+Open Windows Search.
+Type: Turn Windows features on or off
+Enable the following:
+ Virtual Machine Platform
+ Windows Subsystem for Linux
+Click OK.
+Click Restart Now.
+Step 2: Check WSL Status
+Open Command Prompt (Run as Administrator).
+Type:
+wsl --status
+→ This shows WSL version and status.
+Step 3: Update WSL
+In Command Prompt, type:
+wsl --update
+→ This updates the WSL kernel.
+
+Step 4: Install Ubuntu from Microsoft Store
+Open Microsoft Store.
+Search: Ubuntu
+Click Download / Get
+Wait for installation to complete.
+Click Open
+Step 5: Create UNIX User Account
+When Ubuntu opens for the first time:
+Enter UNIX username
+Enter Password
+Confirm Password
+(Note: Password will not be visible while typing.)
+Step 6: Verify Installation
+After login, type:
+ls
+pwd
+cd /
+ls
+If directories like bin, etc, home, usr, var appear → Installation Successful ✅

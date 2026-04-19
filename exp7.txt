@@ -1,0 +1,63 @@
+Procedure
+Step 1: Install MATLAB
+
+Visit the official website: https://www.mathworks.com
+Sign in with your MathWorks account.
+Download the MATLAB installer.
+Run the installer.
+Select license type (Student/Trial/Institution).
+Choose required toolboxes.
+Select installation folder.
+Click Install and wait for completion.
+Step 2: Launch MATLAB
+
+Open MATLAB from Start Menu.
+Observe the MATLAB Desktop interface.
+Identify:
+Command Window
+Workspace
+Current Folder
+Editor
+Step 3: Set Working Directory
+
+Click on Current Folder panel.
+Select your project folder.
+OR
+Use command:
+cd 'C:\MATLAB_Project'
+Step 4: Add Folder to Path
+
+Go to Home → Set Path → Add Folder
+Click Save
+OR
+addpath('C:\MATLAB_Project')
+savepath
+Step 5: Install Toolboxes
+Go to Home → Add-Ons → Get Add-Ons
+Search for required toolbox
+Click Install
+Example Toolboxes:
+Image Processing Toolbox
+Signal Processing Toolbox
+Deep Learning Toolbox
+Step 6: Execute Test Program
+In Command Window type:
+a = 10;
+b = 20;
+c = a + b
+Output:
+c = 30
+Step 7: Create and Run Script
+Click New Script
+Type:
+disp('Hello MATLAB')
+Click Run
+Output:
+Hello MATLAB
+Result
+MATLAB was successfully installed and configured. Basic commands and script execution were performed successfully.
+ Precautions
+Ensure stable internet connection during installation.
+Select correct license type.
+Save path after adding folders.
+Verify toolbox compatibility before installation.

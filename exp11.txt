@@ -1,0 +1,30 @@
+Procedure
+Step 1: Create Repository on GitHub
+Open https://github.com
+Login to your account.
+Click on "+" icon → New repository.
+Enter repository name.
+Select Public or Private.
+Click Create repository.
+
+Step 2: Clone Repository
+
+Copy the repository URL and run:
+git clone https://github.com/username/repository-name.git
+cd repository-name
+
+Step 3: Add and Commit Files
+
+git add .
+git commit -m "Initial Commit"
+git push origin main
+
+Step 4: Create and Manage Branch
+
+git checkout -b new-branch
+git checkout main
+git merge new-branch
+git branch -d new-branch
+
+Step 5: Pull Latest Changes
+git pull origin main

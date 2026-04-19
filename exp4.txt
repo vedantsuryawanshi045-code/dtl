@@ -1,3 +1,29 @@
+Procedure:
+1. Create a Directory
+mkdir lab
+2. Navigate into Directory
+cd lab
+3. Create a File
+touch test.txt
+4. Edit the File
+nano test.txt
+(Type some content and save using Ctrl + X, then Y, then Enter)
+5. Display File Content
+cat test.txt
+6. Copy the File
+cp test.txt copy.txt
+7. Create Another Directory
+mkdir folder1
+8. Move File to Directory
+mv copy.txt folder1/
+9. Delete a File
+rm test.txt
+10. Remove Directory
+rm -r folder1
+11. Go Back and Remove Main Directory
+cd ..
+rmdir lab
+
 ______________________________________
 |Command |  Description               |
 |mkdir   | Create directory           |

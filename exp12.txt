@@ -1,0 +1,49 @@
+Procedure
+Step 1: Install Git
+Download Git from official website.
+Install with default settings.
+Verify installation:
+git --version
+
+Step 2: Create a New Repository on GitHub
+
+Login to GitHub
+Click New Repository
+Enter repository name
+Click Create Repository
+Step 3: Clone Repository to Local System
+git clone <repository-url>
+cd repository-name
+Step 4: Create a New Branch
+git branch feature-login
+git checkout feature-login
+OR
+git checkout -b feature-login
+Verify branch:
+git branch
+
+Step 5: Make Changes
+Create a new file (example: login.html)
+Add some content
+Save the file
+Step 6: Add and Commit Changes
+git add .
+git commit -m "Added login page feature"
+
+Step 7: Push Branch to GitHub
+git push origin feature-login
+
+Step 8: Create Pull Request on GitHub
+
+Go to repository on GitHub
+Click Compare & Pull Request
+Add title and description
+Click Create Pull Request
+Step 9: Review and Merge Pull Request
+Review changes
+Click Merge Pull Request
+Confirm Merge
+Delete feature branch (optional)
+Step 10: Pull Latest Changes to Local
+git checkout main
+git pull origin main

@@ -1,0 +1,23 @@
+ Procedure
+Part A: Installation and Configuration of VirtualBox
+
+Download VirtualBox from its official website.
+Install the software by following the setup wizard.
+Open VirtualBox and click New.
+Select OS Type: Linux → Ubuntu (64-bit).
+Allocate RAM (Minimum 2GB).
+Create a virtual hard disk (Minimum 20GB).
+Attach Ubuntu ISO file under Settings → Storage.
+Start the VM and complete Ubuntu installation.
+Install Guest Additions for enhanced performance.
+
+Part B: Installation and Configuration of VMware Workstation
+
+Download VMware Workstation Player.
+Install and launch the software.
+Click Create a New Virtual Machine.
+Select Ubuntu ISO file.
+Choose Linux → Ubuntu 64-bit.
+Allocate RAM (2–4GB) and Disk Space (20GB).
+Finish setup and power on the VM.
+Install VMware Tools for better integration.

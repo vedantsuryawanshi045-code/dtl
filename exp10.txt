@@ -1,0 +1,51 @@
+Step 1: Install Hypervisor
+Download VirtualBox from official website.
+Install it like normal software.
+Restart system if required.
+ Step 2: Create New Virtual Machine
+Open VirtualBox.
+Click New.
+Enter:
+Name: Ubuntu
+Type: Linux
+Version: Ubuntu (64-bit)
+Click Next.
+ Step 3: Allocate Resources
+ RAM Allocation
+Minimum: 2 GB
+Recommended: 4 GB
+Create Virtual Hard Disk
+Choose VDI
+Select Dynamically allocated
+Size: 20 GB or more
+Click Create.
+Step 4: Attach ISO File
+Go to Settings → Storage
+Under Controller IDE, click Empty
+Choose Ubuntu ISO file
+Click OK
+ Step 5: Start Virtual Machine
+Click Start
+Ubuntu installer screen appears
+Select:
+Install Ubuntu
+Language
+Keyboard layout
+Choose:
+Normal Installation
+Erase disk (only inside VM, safe)
+Create username & password
+Click Install
+Installation takes 10–20 minutes.
+ Step 6: Operating the Guest OS
+After installation:
+Login using username & password
+Open Terminal
+Install software
+Create files
+Run applications
+Example commands:
+ls
+pwd
+mkdir test
+cd test
